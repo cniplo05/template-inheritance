@@ -14,8 +14,12 @@
             <?php startblock('nav') ?>
                 
             <div class="container">
-      asdasdasdasd
-    </div>
+                <div class="card">
+                    <div class="card-header">
+                        This is the base layout.
+                    </div>
+                 </div>
+            </div>
             <?php endblock() ?>
         </nav>
     </header>

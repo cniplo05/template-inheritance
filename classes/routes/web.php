@@ -1,12 +1,12 @@
 <?php
     // namespace routes;
-    use routes\Route;
     use http\PagesController;
     
-    Route::set('home-dashboard',function(){
-        PagesController::CreateView('home-dashboard');
+    
+    Flight::route('/@url',function($url){
+        PagesController::CreateView($url);
     });
-    Route::set('about-us',function(){
-        PagesController::CreateView('about-us');
+    Flight::route('/@name/@id', function($name, $id){
+        echo "hello, $name ($id)!";
     });
 ?>
