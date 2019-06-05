@@ -24,14 +24,16 @@
                                     <?php if($data != null){
                                         foreach($data as $inf){
                                             echo '<tr>
-                                                    <th scope="row">'.$inf.'</th>
-                                                    <td>Sample Name</td>
-                                                    <td>Sample Age</td>
-                                                    <td>Sample now</td>
-                                                    <td>Sample null</td>
+                                                    <th scope="row">'.$inf[0].'</th>
+                                                    <td>'.$inf[1].'</td>
+                                                    <td>'.$inf[2].'</td>
+                                                    <td>'.$inf[3].'</td>
+                                                    <td>'.$inf[4].'</td>
                                                 </tr>';
                                             
                                         }
+                                    }else{
+                                        echo 'no data';
                                     } ?>
                                     
                             </tbody>
