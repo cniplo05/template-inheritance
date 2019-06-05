@@ -3,7 +3,7 @@
 
 <?php startblock('nav') ?>
    <div class="container">
-      asdasd
+      
     </div>
 <?php endblock() ?>
 

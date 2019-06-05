@@ -5,8 +5,10 @@
 
         public static function set($route, $function){
             self::$validRoutes[] = $route;
-            if($_GET['url'] == $route){
-                $function->__invoke();
+            if (isset($_GET['url'])){
+                if( $_GET['url'] == $route){
+                        $function->__invoke();
+                }
             }
         }
     }
